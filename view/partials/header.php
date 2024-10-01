@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
+  <head><script src="/assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -188,10 +188,10 @@
 
   <div class="nav-scroller py-1 mb-3 border-bottom">
     <nav class="nav nav-underline justify-content-between">
-      <a class="nav-item nav-link link-body-emphasis active" href="#">World</a>
-      <a class="nav-item nav-link link-body-emphasis" href="./us.php">U.S.</a>
-      <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
-      <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
+      <a class="nav-item nav-link link-body-emphasis active" href="/">World</a>
+      <a class="nav-item nav-link link-body-emphasis" href="/us">U.S.</a>
+      <a class="nav-item nav-link link-body-emphasis" href="/form">Form</a>
+      <a class="nav-item nav-link link-body-emphasis" href="/admin/posts">Admin</a>
       <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
       <a class="nav-item nav-link link-body-emphasis" href="#">Business</a>
       <a class="nav-item nav-link link-body-emphasis" href="#">Politics</a>

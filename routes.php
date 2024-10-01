@@ -1,16 +1,19 @@
 <?php
 
-use App\Router;
+use App\Controllers\PostsController;
 use App\Controllers\PublicController;
+use App\Route; 
 
-Router::addRoutes('/', [PublicController::class, 'index']);
+Route::get('/', [PublicController::class, 'index']);
 
-Router::addRoutes('/us', [PublicController::class, 'us']);
+Route::get('/us', [PublicController::class, 'us']);
+Route::get('/form', [PublicController::class, 'form']);
+Route::post('/answer', [PublicController::class, 'answer']);
 
-$router = new App\Router($_SERVER['REQUEST_URI']);
-$match = $router->match();
-if ($match) {
-    call_user_func($match['callback']);
-} else {
-    http_response_code(404);
-}
+Route::get('/admin/posts', [PostsController::class, 'index']);
+Route::get('/admin/posts/create', [PostsController::class, 'create']);
+Route::post('/admin/posts', [PostsController::class, 'store']);
+Route::get('/admin/posts/show', [PostsController::class, 'show']);
+Route::get('/admin/posts/edit', [PostsController::class, 'edit']);
+Route::post('/admin/posts/edit', [PostsController::class, 'update']);
+Route::get('/admin/posts/delete', [PostsController::class, 'destroy']);
